@@ -29,13 +29,13 @@ html {
       transform: rotate(25deg);
     }
   }
-#detalhe1 {
+/* #detalhe1 {
     width: 20px;
     position: absolute;
     top: 220px;
-    left: 150px;
+    left: 15px;
     z-index: 4;
-}
+} */
 #detalhe2{
     width: 35px;
     position: absolute;
@@ -98,31 +98,38 @@ body{
     background-color: var(--corsecundaria);
 }
 #textoseçaoinicial{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
     color: var(--corprincipal);
-    width: 60%;
+    width: 100%;
     margin-left: 10px;
     margin-right: 0;
     z-index: 5;
 }
 #titulo1{
-    width: 80%;
+    width:  150%;
+    height: 100%;
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 #subtitulo{
     color: var(--corterciaria);
-    width: 90%;
+    width: 150%;
     margin: 0;
     margin-right: 10px;
     font-size: 0.8rem;
     z-index: 1;
 }
+#divimagemprinc{
+    flex: 2;
+    height: 100%;
+    width: 80%;
+}
 #imgprincipal{
     margin: 0;
-    width: 20rem;
-    position: absolute;
-    left: 7rem;
-    top: 4.38rem;
+    height: 100%;
+    object-fit: cover;
     z-index: 0;
 }
 #button1{
@@ -209,18 +216,27 @@ body{
     width: 70px;
     transform: scale(1.1);
 }
-#explicacaoimagem{
-    width: 200%;
+#explicacaoimagem {
+    width: 100%;
     position: absolute;
-    right: -220px;
+    right: 0;
     opacity: 60%;
     background-size: cover;
     overflow: hidden;
+    object-fit: cover;
+    height: 100%;
 }
-#explicacao{
+#explicacaotextoconteiner{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+#explicacao {
     display: flex;
     height: 28.6rem;
     background-color: var(--corsecundaria);
+    overflow: hidden;
+    position: relative;
 }
 #textoexplicacao{
     width: 90%;
@@ -229,18 +245,18 @@ body{
     align-self: flex-end;
     text-align: justify;
     margin: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 0.9rem;
     font-family: 'Lexend', sans-serif;
 }
 #tituloexplicacao{
     font-family: 'Poppins', sans-serif;
     z-index: 21;
-    position: absolute;
-    top: 1525px;
-    margin: 10px;
+    margin: 25px;
+    margin-bottom: 0;
     color: white;
     font-size: 1.5rem;
+    align-self: flex-end;
 }
 
 #terceiraseçao{
@@ -361,35 +377,7 @@ footer{
 }
 
 @media only screen and (min-width: 150px) and (max-width: 250px){
-    #seçaoinicial{
-        height: 10rem;
-    }
-    #imgprincipal{
-        left: 5rem;
-        width: 13.1rem;
-    }
-    #titulo1{
-        font-size: 1rem;
-        width: 60%;
-    }
-    #subtitulo{
-        width: 70%;
-        font-size: 0.6rem;
-    }
-    #digital{
-        left: 300px;
-    }
-    #detalhe2{
-        display: none;
-    }
-    #detalhe1{
-        display: none;
-    }
-    #digital{
-        width: 25px;
-        left: 190px;
-        top: 100px;
-    }
+
     #explicacao{
         height: 18.6rem;
     }
@@ -407,9 +395,6 @@ footer{
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 330px){
-    #titulo1{
-        font-size: 1.5rem;
-    }
     #explicacao{
         height: 25.3rem;
     }
@@ -423,19 +408,13 @@ footer{
         margin-bottom: 15px;
     }
     #explicacaoimagem{
-        right: -170px;
+        
     }
 
 }
 @media only screen and (min-width: 360px) and (max-width: 380px){
     #imgprincipal{
-        left: 7.5rem;
-    }
-    #titulo1{
-        font-size: 1.5rem;
-    }
-    #subtitulo{
-        width: 70%;
+        
     }
     #digital{
         left: 300px;
@@ -443,24 +422,13 @@ footer{
     #explicacao{
         height: 29.9rem;
     }
-    #tituloexplicacao{
-        top: 1545px;
-    }
 
 }
 @media only screen and (min-width: 360px) and (max-width: 365px){
     #imgprincipal{
-        left: 7.5rem;
+        
     }
-    #titulo1{
-        font-size: 1.5rem;
-    }
-    #subtitulo{
-        width: 70%;
-    }
-    #digital{
-        left: 300px;
-    }
+
     #explicacao{
         height: 28.6rem;
     }
@@ -473,27 +441,11 @@ footer{
     #logo{
         align-items: center;
     }
-    #imgprincipal{
-        left: 9.5rem;
-    }
-    #detalhe1{
-        top: 200px;
-    }
-    #titulo1{
-        font-size: 1.6rem;
-    }
-    #subtitulo{
-        width: 90%;
-    }
     #digital{
         left: 330px;
     }
     #explicacao{
         height: 33.1rem;
-    }
-    #tituloexplicacao{
-        top: 1585px;
-        font-size: 2rem;
     }
     #textoexplicacao{
         font-size: 1rem;
@@ -516,43 +468,6 @@ footer{
     }
 }
 @media only screen and (min-width: 420px) and (max-width: 1800px){
-    #seçaoinicial{
-        height: 27rem;
-    }
-    #imgprincipal{
-        left: 55rem;
-        width: 43rem;
-        top: -0.4rem;
-    }
-    #titulo1{
-        font-size: 4rem;
-        width: 80%;
-        margin-left: 80px;
-    }
-    #subtitulo{
-        width: 70%;
-        font-size: 2rem;
-        margin-left: 80px;
-    }
-    #detalhe2{
-        width: 8rem;
-        top: 40px;
-    }
-    #detalhe21{
-        width: 8rem;
-        top: 400px;
-        left: 800px;
-    }
-    #detalhe1{
-        width: 5rem;
-        left: 1300px;
-        top:50px;
-    }
-    #digital{
-        width: 7rem;
-        left:750px;
-        top: 190px;
-    }
     #buttonmobile{
         display: none;
     }
@@ -595,13 +510,6 @@ footer{
         width: 85px;
         transform: scale(1.1);
     }
-    #explicacaoimagem{
-        position: relative;
-        top: 0px;
-        object-fit: cover;
-        right: 0px;
-        height: 100%;
-    }
     #explicacao{
         flex-direction: row-reverse;
         height: 35rem;
@@ -613,9 +521,6 @@ footer{
         font-size: 1.5rem;
     }
     #tituloexplicacao{
-        position: absolute;
-        top: 1400px;
-        margin: 30px;
         font-size: 2.5rem;
     }
     #terceiraseçao{
