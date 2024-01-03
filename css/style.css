@@ -61,6 +61,7 @@ body{
     animation-direction: alternate;
     animation-iteration-count: infinite;
     z-index: 6;
+    display: none;
 }
 @keyframes digital {
     from {}
@@ -505,7 +506,9 @@ footer{
     }
 }
 @media only screen and (min-width: 1300px) and (max-width: 1800px) {
-
+    #digital{
+        display: flex;
+    }
     #detalhe2{
         width: 100px;
     }
