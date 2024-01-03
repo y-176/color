@@ -438,7 +438,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 380px) and (max-width: 600px) {
+@media only screen and (min-width: 380px) and (max-width: 420px) {
     #explicacao {
         height: 33.1rem;
     }
@@ -450,7 +450,55 @@ footer{
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1800px) {
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    #titulo1{
+    width: 120%;
+    }
+    #subtitulo{
+    width: 120%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    #titulo1{
+    font-size: 1.7rem;
+    width: 120%;
+    }
+    #subtitulo{
+    font-size: 1rem;
+    width: 120%;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    #titulo1{
+    font-size: 1.7rem;
+    width: 100%;
+    }
+    #subtitulo{
+    font-size: 1rem;
+    width: 100%;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    #titulo1{
+    font-size: 2rem;
+    width: 110%;
+    }
+    #subtitulo{
+    font-size: 1.5rem;
+    width: 110%;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    #titulo1{
+    font-size: 3rem;
+    width: 110%;
+    }
+    #subtitulo{
+    font-size: 1.5rem;
+    width: 110%;
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1800px) {
 
     #detalhe2{
         width: 100px;
